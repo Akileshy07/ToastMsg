@@ -1,0 +1,101 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,300;0,500;1,200;1,500&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'poppins';
+}
+
+body{
+    background: #CCC8AA ;
+}
+.button{
+    margin: 50px;
+}
+.button button{
+    background-color: #191717;
+    color: #fff;
+    padding: 8px 20px;
+    margin: 10px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+}
+#toastMsg{
+    position: absolute;
+    bottom: 30px;
+    right: 30px;
+    padding: 14px;
+    overflow: hidden;
+}
+.msg{
+    width: 300px;
+    height: 40px;
+    background-color: #F1EFEF;
+    margin: 20px 0;
+    padding: 30px 0;
+    display: flex;
+    align-items: center;
+    box-shadow: 0 10px 10px rgba(0,0,0,0.1);
+    position: relative;
+}
+ .fa-check-circle{
+    color: green;
+    font-size: 25px;
+    margin: 0 20px;
+}
+.fa-times-circle{
+    color: red;
+    font-size: 25px;
+    margin: 0 20px;
+}
+.fa-exclamation-circle{
+    color: rgb(247, 231, 10);
+    font-size: 25px;
+    margin: 0 20px; 
+}
+.msg::after{
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 0%;
+    height: 5px;
+    background-color: green;
+    animation: anim 5s linear forwards;
+}
+@keyframes anim{
+    100%{
+        width: 100%;
+    }
+
+}
+
+.progress{
+    width: 400px;
+    height: 10px;
+    background-color: #F1EFEF;
+   margin-left: 30px;
+   position: relative;
+}
+.progress::after{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0%;
+    height: 10px;
+    background-color: #191717;
+    animation: animation 0.5s linear forwards;
+
+}
+
+@keyframes animation{
+100%{
+    width: 85%;
+}
+}
+@media (width < 760px){
+    
+}
